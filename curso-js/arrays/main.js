@@ -55,6 +55,53 @@ return acc + num ;
 // console.log(numerosPares)
 
 
+//pegar o tamanho do array  com length
+
+const nomes = ['leo'.'maria','joao','rodrigo']
+console.log(nomes.length)
+
+
+//remmovendo um array no começo com  shift
+
+const nomes = ['leo'.'maria','joao','rodrigo']
+const removido = nomes.shift();
+console.log(nomes,removido)
+
+
+
+//adicionar  array no final com  push
+const nomes = ['leo'.'maria','joao','rodrigo']
+nomes.push('recife')
+console.log(nomes)
+
+
+//adicionar  elementos no começo do array com unshift
+
+const nomes = ['leo'.'maria','joao','rodrigo']
+nomes.unshift('recife')
+console.log(nomes)
+
+
+
+const nomes = ['leo'.'maria','joao','rodrigo']
+nomes.unshift('recife')
+console.log(nomes)
+
+
+
+//fatiar  uma  aray com  slice selecionar
+const nomes = ['leo'.'maria','joao','rodrigo','sao paulo']
+ const  novo = nomes.slice(1,3)
+console.log(novo)
+
+
+
+
+
+
+
+
+
 
 //numeros  impar com array
 
@@ -99,6 +146,27 @@ function alunosAprovados(alunos) {
   }
   return aprovados;
 }
+
+
+Escreva uma função ordenarArray que recebe um array de números como parâmetro e retorna o array ordenado em ordem crescente.
+
+
+let  array = [1,4,7,9,8]
+
+function ordenarArray(array) {
+     
+    let arrayOrdenado = array.sort()
+
+    return arrayOrdenado
+    
+}
+
+console.log(ordenarArray(array));
+
+
+
+
+
 
 
 
