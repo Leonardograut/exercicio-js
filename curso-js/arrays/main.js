@@ -54,55 +54,147 @@ return acc + num ;
 
 // console.log(numerosPares)
 
-
+------------------------------------------------
 //pegar o tamanho do array  com length
 
 const nomes = ['leo'.'maria','joao','rodrigo']
 console.log(nomes.length)
 
-
+-----------------------------------------------------------
 //remmovendo um array no começo com  shift
 
 const nomes = ['leo'.'maria','joao','rodrigo']
 const removido = nomes.shift();
 console.log(nomes,removido)
 
-
+-----------------------------------------------
 
 //adicionar  array no final com  push
 const nomes = ['leo'.'maria','joao','rodrigo']
 nomes.push('recife')
 console.log(nomes)
 
-
+--------------------------------------
 //adicionar  elementos no começo do array com unshift
 
 const nomes = ['leo'.'maria','joao','rodrigo']
 nomes.unshift('recife')
 console.log(nomes)
 
-
+---------------------------------------------
 
 const nomes = ['leo'.'maria','joao','rodrigo']
 nomes.unshift('recife')
 console.log(nomes)
 
 
-
+-------------------------------------
 //fatiar  uma  aray com  slice selecionar
 const nomes = ['leo'.'maria','joao','rodrigo','sao paulo']
  const  novo = nomes.slice(1,3)
 console.log(novo)
 
+--------------------------------
+//retorne os numeros  maior que   10 com filter 
+
+const numeros = [5,50,80,1,4,46,56,3,9,15]
+
+const numerosMaior = numeros.filter(function(valor){
+return valor >10
+
+
+})
+
+console.log(numerosMaior)
+
+-------------------------------------------
+ 
+//retorne as pessoas que tem o nome com  8 letras ou mais
+// feito com arrow function
+
+const pessoas =[
+ 
+{nome:'luiz',idade:62},
+{nome:'leonardo',idade:50},
+{nome:'Rosana',idade:40},
+{nome:'vinicius',idade:30},
+{nome:'rafael',idade:28},
+{nome:'elizadoraleitao',idade:70},
+{nome:'leo',idade:45}
+
+
+]
+
+const pessoasNomeGrande = pessoas.filter(valor=>valor.nome.length >=8)
+
+
+console.log(pessoasNomeGrande)
+
+
+
+-------------------------------------------------------------
+//retorne as pessoas que tem o nome com mais de 50 anos
+// feito com arrow function
+
+const pessoas =[
+ 
+{nome:'luiz',idade:62},
+{nome:'leonardo',idade:50},
+{nome:'Rosana',idade:40},
+{nome:'vinicius',idade:30},
+{nome:'rafael',idade:28},
+{nome:'elizadoraleitao',idade:70},
+{nome:'leo',idade:45}
+
+
+]
+
+const pessoasComMaisdeCinquenta = pessoas.filter(valor=>valor.idade >50)
+
+
+console.log(pessoasComMaisdeCinquenta)
 
 
 
 
+-------------------------------------------------
+
+ 
+ 
+ //retorne as pessoas que termine com o
+
+
+const pessoas =[
+ 
+{nome:'luiz',idade:62},
+{nome:'leonardo',idade:50},
+{nome:'Rosana',idade:40},
+{nome:'vinicius',idade:30},
+{nome:'rafael',idade:28},
+{nome:'elizadoraleitao',idade:70},
+{nome:'leo',idade:45}
+
+]
 
 
 
+const pessoasTerminaComO = pessoas.filter(obj =>{
+
+return obj.nome.toLowerCase().endsWith('o')
 
 
+})
+
+
+console.log(pessoasTerminaComO)
+ 
+ 
+ 
+ ------------------------------------------
+ 
+ 
+ 
+ 
 //numeros  impar com array
 
  let numeros = [1,2,3,4,5,6,7,8]
@@ -114,7 +206,9 @@ console.log(novo)
  })
 
  console.log(numerosImpar)
-
+-------------------------------------------------
+  
+  
 //numeros divisiveis  por 3 
 
  let numeros = [1,4,2,5,9,45,8]
@@ -124,6 +218,11 @@ console.log(novo)
  }) 
 
 console.log(numerosDivisiveis)
+
+ --------------------------------------------
+
+
+
 
 
 
@@ -147,7 +246,7 @@ function alunosAprovados(alunos) {
   return aprovados;
 }
 
-
+------------------------------------------------------------------
 Escreva uma função ordenarArray que recebe um array de números como parâmetro e retorna o array ordenado em ordem crescente.
 
 
@@ -164,7 +263,7 @@ function ordenarArray(array) {
 console.log(ordenarArray(array));
 
 
-
+-----------------------------------------------------------------
 
 
 
