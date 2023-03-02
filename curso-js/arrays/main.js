@@ -1,12 +1,11 @@
 
 
 
+ exer 1  Crie um programa que imprime os números de 1 a 10 
 
-//  exer 1  Crie um programa que imprime os números de 1 a 10 
+ for(let i =1; i < 11; i++)
 
-// for(let i =1; i < 11; i++)
-
-// console.log(i)
+console.log(i)
 
 
 
@@ -14,15 +13,14 @@
 //Some todos os valores do Arrays
 
 
-// const numeros =[1,2,3,4,5];
+const numeros =[1,2,3,4,5];
 
-// const soma = numeros.reduce(function(acc,num){
+const soma = numeros.reduce(function(acc,num){
 
-// return acc + num ;
+return acc + num ;
+},0);
 
-// },0);
-
-//  console.log(soma)
+ console.log(soma)
             
 
 
@@ -60,24 +58,25 @@
 
 //numeros  impar com array
 
-// let numeros = [1,2,3,4,5,6,7,8]
+ let numeros = [1,2,3,4,5,6,7,8]
 
-// let numerosImpar = numeros.filter(function(valor){
+ let numerosImpar = numeros.filter(function(valor){
 
-//   return valor %2 === 1 ;
+   return valor %2 === 1 ;
 
-// })
+ })
 
-// console.log(numerosImpar)
+ console.log(numerosImpar)
 
+//numeros divisiveis  por 3 
 
-// let numeros = [1,4,2,5,9,45,8]
+ let numeros = [1,4,2,5,9,45,8]
 
-// let numerosDivisiveis = numeros.filter(function(valor){
-//    valor %3 ===0
-// }) 
+ let numerosDivisiveis = numeros.filter(function(valor){
+    valor %3 ===0
+ }) 
 
-// console.log(numerosDivisiveis)
+console.log(numerosDivisiveis)
 
 
 
