@@ -263,9 +263,185 @@ function ordenarArray(array) {
 console.log(ordenarArray(array));
 
 
+
+
+
+
+
+
+exercicio 1
+
+Crie um Array chamado "cores" com as cores vermelho, verde e azul, e adicione a cor amarela ao final do Array.
+
+
+const pessoas =[
+ 
+    {cor:'azul'},
+    {cor:'vermelho',},
+    {cor:'azul'},
+    {cor:'laranja'}
+    
+]
+ 
+
+pessoas.push('amarela')
+console.log(pessoas)
+*/
+
+
+
+
+
+
+---------------------------------------------------------------------------
+
+
+
+exercicio  2 
+Crie uma função que receba um Array como argumento e retorne o maior número do Array.
+
+function MaiorNumero(array){
+
+    const MaiorNumero = array.reduce((acumulador,valor)=>{
+
+     if(acumulador < valor){
+         acumulador = valor
+         return acumulador
+     }
+
+    },0)
+
+return MaiorNumero
+
+}
+console.log(MaiorNumero(Maior));
+
+
+
+
+
 -----------------------------------------------------------------
 
 
+ // exercicio 3
+ Crie uma função que receba um Array de strings como argumento e retorne um novo Array com todas as strings em letras maiúsculas.
+
+
+const nomes =['leo','maria','joao','mario']
+
+
+
+function Nomes(array){
+ const NomesString = array.join(",") 
+ const NomesString2=NomesString.toUpperCase();
+ const NomesStringArray = NomesString2.split(',')
+
+ return  NomesStringArray
+
+}
+
+
+
+console.log(Nomes(nomes));
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ -----------------------------------------------------------------------------------------
+ 
+ exercicio 4  
+Crie uma função que receba dois Arrays como argumentos e retorne um novo Array com todos os elementos dos dois Arrays, sem duplicatas.
+
+const  Arrays1 = [1,2,2,3]
+const Arrays2 = [1,2,2,3,3,4,4]
+function Arrays(arrays,arrays2){  
+const NovoArray = [
+    ...arrays,
+    ...arrays2
+]
+ const Array =  NovoArray.filter((valor,index)=>{
+
+  return NovoArray.indexOf(valor) === index; 
+
+
+ })
+ return Array;
+}
+console.log(Arrays(Arrays1,Arrays2))
+
+ 
+ 
+ 
+ 
+ -----------------------------------------------------------------------------------------------------
+ exercicio 5 crie uma funçao que receba um array de numeros  como argumento e retorne a media dos numeros 
+
+const Numeros = [1,2,3,4,5,7,8,9]
+
+
+
+function Media(Numero){   
+
+    const SomasdasNotas = Numero.reduce((acumulador,valor)=>{
+        acumulador += valor
+        return  acumulador
+    },0);
+
+    let mediaAluno = SomasdasNotas / Numero.length
+    return mediaAluno.toFixed(2);
+}
+
+console.log(Media(Numeros))
+ 
+ 
+ 
+ ------------------------------------------------------------------
+ 
+exercicio 6 com numeros  pares
+
+ const numeros = [1,2,3,4,5,7,8,9]
+
+  const numerosPar = numeros.filter(function(valor){
+
+  return valor  %2 === 0
+
+   })
+ console.log(numerosPar)
+
+ 
+ 
+ ----------------------------------------------------------------
+ 
+ exercicio 7 com numeros impares
+
+
+ const numeros = [1,2,3,4,5,7,8,9]
+
+
+
+ const numerosPar = numeros.filter(function(valor){
+
+   return valor  %2 == 1
+
+ })
+
+ console.log(numerosPar)
+
+ ---------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
