@@ -434,10 +434,50 @@ exercicio 6 com numeros  pares
  ---------------------------------------------
  
  
+ exer 10 Crie uma função que receba um Array de números como argumento e retorne um novo Array com os números ordenados do menor para o maior.
  
+ let array = [1,4,7,5,4,89,5]
+
+    function OrdenarArray(array){
+
+        let arrayOrdenado = array.sort()
+
+        return arrayOrdenado
+    }
+
+    console.log(OrdenarArray(array))
  
+ ----------------------------------------------------------------------------
  
+
+11) Crie um objeto chamado "pessoa" com as propriedades "nome", "idade" ,"profissao"
+
+
+var pessoa = {'nome':'leonardo',idade:28,profissao:'Desenvolvedor'};
+
+
+
+console.log(`Oi meu nome e  ${pessoa.nome} com idade ${pessoa.idade} e atualmente  buscando vaga na profissao de ${pessoa.profissao}`)
+
  
+
+------------------------------------------------------------------------------------------------------------
+
+12) Crie uma função que receba um objeto pessoa como argumento e retorne a idade da pessoa.
+
+var pessoa = new Object();
+pessoa.idade = 28;
+
+function  IdadePessoa(pessoa){
+
+   const IdadeNova = pessoa.idade 
+  
+   return IdadeNova;
+}
+
+console.log(pessoa.idade)
+
+---------------------------------------------------------------------------------------------------------------------
  
  
  
