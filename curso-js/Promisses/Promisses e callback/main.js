@@ -112,16 +112,16 @@ Mostrar(5,2, multiplicar)
 exercicio 5 = Crie uma função que receba um número inteiro e uma função de callback como argumentos.
  A função deve chamar a função de callback passando o número elevado ao quadrado.
 
-// function num(x, callback){
-//     const valor =Math.pow(x,2)
-//     callback(valor)
-// }
+function num(x, callback){
+    const valor =Math.pow(x,2)
+    callback(valor)
+}
 
-// function Mostrar(resultado){
-//     console.log('O resultado da operacao e '+ resultado)
-// }
+function Mostrar(resultado){
+    console.log('O resultado da operacao e '+ resultado)
+}
 
-// num(6,Mostrar)
+num(6,Mostrar)
 
 
 --------------------------------------------------------------------------------
